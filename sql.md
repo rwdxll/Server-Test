@@ -61,3 +61,21 @@ WHERE
 	orderStatus != "close")t1
 group by price_range
 ```
+## mysql之累加
+```
+SET @x = 0;
+SELECT
+	t1.months,
+	t1.register_num ,
+	@x := @x + t1.register_num AS total_register
+FROM
+	(
+		SELECT
+			DATE_FORMAT(createTime, "%Y%m") months,
+			count(id) AS register_num
+		FROM
+			t_user
+		GROUP BY
+			months asc
+	) t1
+```

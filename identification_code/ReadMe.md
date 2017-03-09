@@ -1,29 +1,29 @@
 
-# 验证码识别环境安装
+# 验证码识别
 
 ### 环境搭建
 
 > 基于linux/mac、Python
 
-1. 安装Python图像库
+1.安装Python图像库
 
 ```
 	pip install Pillow
 ```
 
-2. 安装Python库Pytesseract
+2.安装Python库Pytesseract
 
 ```
 	pip install pytesseract
 ```
 
-3. 安装Python库tesseract
+3.安装Python库tesseract
 
 ```
 	pip install tesseract
 ```
 
-4. 安装leptonica
+4.安装leptonica
 
 > 下载地址：http://www.leptonica.com/download.html
 
@@ -33,7 +33,7 @@
 	make install
 ```
 
-5. 安装tesseract-ocr
+5.安装tesseract-ocr
 
 > 下载地址：https://github.com/tesseract-ocr/tesseract
 
